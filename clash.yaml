@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：09-06-2023 00:33:03
+# 创建时间：12-06-2023 08:28:21
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：4
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -24,7 +24,8 @@ dns:
 proxies:
   - {"name":"vless cloudf\r","type":"vless","server":"hello-world-small-morning-aa5b.pulsin00.workers.dev","port":80,"uuid":"4d79f310-fd25-4556-9c72-85398b3a6c71","tls":false,"servername":"hello-world-small-morning-aa5b.pulsin00.workers.dev","network":"ws","ws-opts":{"headers":{"host":"hello-world-small-morning-aa5b.pulsin00.workers.dev"}}}
   - {"name":"vless cloudf-clone\r","type":"vless","server":"hello-world-small-morning-aa5b.pulsin00.workers.dev","port":443,"uuid":"4d79f310-fd25-4556-9c72-85398b3a6c71","tls":true,"servername":"hello-world-small-morning-aa5b.pulsin00.workers.dev","network":"ws","ws-opts":{"headers":{"host":"hello-world-small-morning-aa5b.pulsin00.workers.dev"}},"client-fingerprint":"chrome"}
-  - {"name":"vless+cloudf-clone+2","type":"vless","server":"hello-world-small-morning-aa5b.pulsin00.workers.dev","port":443,"uuid":"4d79f310-fd25-4556-9c72-85398b3a6c71","tls":true,"servername":"hello-world-small-morning-aa5b.pulsin00.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-small-morning-aa5b.pulsin00.workers.dev"}},"client-fingerprint":"chrome"}
+  - {"name":"vless+cloudf-clone+2\r","type":"vless","server":"hello-world-small-morning-aa5b.pulsin00.workers.dev","port":443,"uuid":"4d79f310-fd25-4556-9c72-85398b3a6c71","tls":true,"servername":"hello-world-small-morning-aa5b.pulsin00.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-small-morning-aa5b.pulsin00.workers.dev"}},"client-fingerprint":"chrome"}
+  - {"name":"vless cloudf-clone 3\r","type":"vless","server":"hello-world-small-morning-aa5b.pulsin00.workers.dev","port":443,"uuid":"4d79f310-fd25-4556-9c72-85398b3a6c71","tls":true,"servername":"hello-world-small-morning-aa5b.pulsin00.workers.dev","network":"ws","ws-opts":{"headers":{"host":"hello-world-small-morning-aa5b.pulsin00.workers.dev"}},"client-fingerprint":"chrome"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -33,7 +34,8 @@ proxy-groups:
       - DIRECT
       - "vless cloudf\r"
       - "vless cloudf-clone\r"
-      - vless+cloudf-clone+2
+      - "vless+cloudf-clone+2\r"
+      - "vless cloudf-clone 3\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -42,7 +44,8 @@ proxy-groups:
     proxies:
       - "vless cloudf\r"
       - "vless cloudf-clone\r"
-      - vless+cloudf-clone+2
+      - "vless+cloudf-clone+2\r"
+      - "vless cloudf-clone 3\r"
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -51,7 +54,8 @@ proxy-groups:
       - 🎯 全球直连
       - "vless cloudf\r"
       - "vless cloudf-clone\r"
-      - vless+cloudf-clone+2
+      - "vless+cloudf-clone+2\r"
+      - "vless cloudf-clone 3\r"
   - name: 📲 电报信息
     type: select
     proxies:
@@ -59,7 +63,8 @@ proxy-groups:
       - 🎯 全球直连
       - "vless cloudf\r"
       - "vless cloudf-clone\r"
-      - vless+cloudf-clone+2
+      - "vless+cloudf-clone+2\r"
+      - "vless cloudf-clone 3\r"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -67,7 +72,8 @@ proxy-groups:
       - 🚀 节点选择
       - "vless cloudf\r"
       - "vless cloudf-clone\r"
-      - vless+cloudf-clone+2
+      - "vless+cloudf-clone+2\r"
+      - "vless cloudf-clone 3\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -75,7 +81,8 @@ proxy-groups:
       - 🎯 全球直连
       - "vless cloudf\r"
       - "vless cloudf-clone\r"
-      - vless+cloudf-clone+2
+      - "vless+cloudf-clone+2\r"
+      - "vless cloudf-clone 3\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,7 +107,8 @@ proxy-groups:
       - ♻️ 自动选择
       - "vless cloudf\r"
       - "vless cloudf-clone\r"
-      - vless+cloudf-clone+2
+      - "vless+cloudf-clone+2\r"
+      - "vless cloudf-clone 3\r"
 
 rules:
 # 本地/局域网地址
